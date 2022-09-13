@@ -9,6 +9,8 @@ import org.junit.Test;
 
 public class JDBCTest {
 
+	// orcle 연동 테스트 
+	
 	static {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
