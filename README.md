@@ -1,1 +1,1 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=스프링 쇼핑몰&fontSize=90" />
+![header](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=150&section=header&text=Spring%20ShoppingMall%20Project&fontSize=60&animation=fadeIn)
