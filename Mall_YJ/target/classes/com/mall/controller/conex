@@ -1,0 +1,8 @@
+1. 사용할 Oracle 테이블 생성 
+2. 저장 데이터객체(VO)생성 db데이터와 이름 갖게
+3. VO getter,setter 생성
+4. 사용할 쿼리문테스트 후 mapper.xml 에 추가
+	mapper 태그에 namespace 속성은 연동시키고자 하는 Mapper(DAO) 인터페이스명을 경로와 함께 명시
+	Ex:) insert into XXX values(#{memberId}, #{memberPw})
+5. DAO 에 입력한 쿼리를 실행시켜줄 메서드 작성
+ 	
