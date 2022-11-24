@@ -5,4 +5,4 @@
 	mapper 태그에 namespace 속성은 연동시키고자 하는 Mapper(DAO) 인터페이스명을 경로와 함께 명시
 	Ex:) insert into XXX values(#{memberId}, #{memberPw})
 5. DAO 에 입력한 쿼리를 실행시켜줄 메서드 작성
- 	
+6. service serviceImpl, controller 작성

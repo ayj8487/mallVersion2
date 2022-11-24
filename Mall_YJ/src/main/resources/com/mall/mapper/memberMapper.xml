@@ -5,8 +5,9 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   <mapper namespace="com.mall.mapper.memberMapper">
 
-	<insert id="memberJoin">
-		insert into member values( #{id}, #{pw}, #{name}, #{email}, #{phone},0, sysdate )
+	<insert id="regist">
+		insert into member values(#{id}, #{pw}, #{name}, #{email}, #{phone},0, sysdate )
+		
 	</insert>
 
   </mapper>

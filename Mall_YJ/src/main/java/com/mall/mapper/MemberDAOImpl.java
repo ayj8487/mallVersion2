@@ -10,7 +10,7 @@ import com.mall.model.MemberVO;
 @Repository
 public class MemberDAOImpl implements MemberDAO{
 
-	private static final String namespace = "";
+	private static final String namespace = "com.mall.mapper.memberMapper";
 	
 	private final SqlSession sqlSession;
 	
@@ -25,6 +25,7 @@ public class MemberDAOImpl implements MemberDAO{
 		sqlSession.insert(namespace + ".regist", memberVO);
 		
 	}
+
 
 	
 }

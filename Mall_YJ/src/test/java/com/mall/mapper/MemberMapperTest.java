@@ -10,6 +10,7 @@ import com.mall.model.MemberVO;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml")
+
 public class MemberMapperTest {
 
 	@Autowired
@@ -17,7 +18,7 @@ public class MemberMapperTest {
 	
 	//회원가입 쿼리 테스트 메서드
 	@Test
-	public void memberJoin() throws Exception{
+	public void regist() throws Exception{
 		MemberVO memberVO = new MemberVO();
 		
 		memberVO.setId("bbbb"); 
