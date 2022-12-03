@@ -1,5 +1,7 @@
 package com.mall.controller;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.mall.model.MemberVO;
 import com.mall.service.MemberService;
@@ -79,5 +82,13 @@ public class MemberController {
 			
 		} // memberIdChkPOST() 종료	
 
+		//로그인
+		@RequestMapping(value = "login", method = RequestMethod.POST)
+		public String loginPOST(HttpServletRequest request, MemberVO member, RedirectAttributes rttr) throws Exception{
+			
+			System.out.println("login 메서드 진입");
+			System.out.println("전달된 데이터 : " + member);
+			return null;
+		}
 	
 }
