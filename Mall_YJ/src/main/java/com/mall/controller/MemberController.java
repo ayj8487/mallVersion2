@@ -89,6 +89,7 @@ public class MemberController {
 			System.out.println("login 메서드 진입");
 			System.out.println("전달된 데이터 : " + member);
 			return null;
+
 		}
 	
 }
