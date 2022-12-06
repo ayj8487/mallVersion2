@@ -139,7 +139,7 @@ public class MemberController {
 		        }
 		}
 		
-		 /* 로그아웃 */
+		 /* 로그아웃 , 비동기식으로 바꿔서 사용*/
 	    @RequestMapping(value="logout.do", method=RequestMethod.GET)
 	    public String logoutMainGET(HttpServletRequest request) throws Exception{
 	        
@@ -150,6 +150,19 @@ public class MemberController {
 	        session.invalidate(); //세션 제거 메서드
 	        
 	        return "redirect:/main"; 
+	        
+	    }
+	    
+	    /* 비동기방식 로그아웃 메서드 */
+	    @RequestMapping(value="logout.do", method=RequestMethod.POST)
+	    @ResponseBody // ajax를 통해 서버에 요청하는 방식이기 때문에 ResponseBody 어노테이션을 사용
+	    public void logoutPOST(HttpServletRequest request) throws Exception{
+	        
+	        logger.info("비동기 로그아웃 메서드 진입");
+	        
+	        HttpSession session = request.getSession();
+	        
+	        session.invalidate();
 	        
 	    }
 		
