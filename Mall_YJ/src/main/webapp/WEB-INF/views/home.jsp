@@ -7,11 +7,12 @@
 </head>
 <body>
 <h1>
-	Hello world!  
-</h1>
+	Home
+	</h1>
 
 <P>  The time on the server is ${serverTime}. </P>
 
-<h2><a href="main">메인</a></h2>
+<h2><a href="/member/login">로그인</a></h2>
+
 </body>
 </html>

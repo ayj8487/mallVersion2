@@ -1,1 +1,7 @@
 @charset "UTF-8";
+
+/* 로그인 성공 영역 */
+.login_success_area>span{
+    display : block;
+    margin-left: 10%;
+}
