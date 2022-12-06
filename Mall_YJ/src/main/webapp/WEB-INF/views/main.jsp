@@ -26,7 +26,7 @@
      <c:if test="${ member != null }">
          <div class="login_success_area">
              <span>${member.name} 님</span>
-             <span>로그아웃</span>
+             <span><a href= "/member/logout.do">로그아웃</a></span>
          </div>
      </c:if>
 </body>

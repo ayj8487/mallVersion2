@@ -138,4 +138,19 @@ public class MemberController {
 		            return "redirect:/member/login";    // 로그인 페이지로 이동
 		        }
 		}
+		
+		 /* 로그아웃 */
+	    @RequestMapping(value="logout.do", method=RequestMethod.GET)
+	    public String logoutMainGET(HttpServletRequest request) throws Exception{
+	        
+	        logger.info("logoutMainGET메서드 진입");
+	        
+	        HttpSession session = request.getSession();
+	        
+	        session.invalidate(); //세션 제거 메서드
+	        
+	        return "redirect:/main"; 
+	        
+	    }
+		
 }
