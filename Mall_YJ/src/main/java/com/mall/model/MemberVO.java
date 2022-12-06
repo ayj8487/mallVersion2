@@ -12,9 +12,16 @@ public class MemberVO {
 	private String email;
 	// 회원 전화번호 
 	private String phone;
+	// 관리자 구분 (0:사용자 1:관리자)
+	private int adck;
 	
 	
-	
+	public int getAdck() {
+		return adck;
+	}
+	public void setAdck(int adck) {
+		this.adck = adck;
+	}
 	public String getId() {
 		return id;
 	}

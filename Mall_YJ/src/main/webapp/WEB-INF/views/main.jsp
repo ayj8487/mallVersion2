@@ -27,7 +27,12 @@
          <div class="login_success_area">
              <span>${member.name} 님</span>
              <span><a href= "/member/logout.do">로그아웃</a></span>
-         </div>
+			 <span>
+   			   <c:if test="${member.adck == 1 }">
+                  <a href="/admin/main">관리자 페이지</a>
+  	           </c:if>
+			 </span>
+         </div>         
      </c:if>
 </body>
 </html>
