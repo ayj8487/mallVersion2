@@ -103,7 +103,7 @@ public class MemberController {
 		} // memberIdChkPOST() 종료	
 
 		//로그인
-		@RequestMapping(value = "login", method = RequestMethod.POST)
+		@RequestMapping(value = "login.do", method = RequestMethod.POST)
 		public String loginPOST(HttpServletRequest request, MemberVO member, RedirectAttributes rttr) throws Exception{
 
 			
