@@ -15,7 +15,9 @@
   	
   	<!-- 로그인 -->
   	<select id="memberLogin" resultType="com.mall.model.MemberVO">
-  		select id, name, email, phone, adck from member where id = #{id} and pw = #{pw}
+  		  select id, pw, name, email, phone, adck from member where id = #{id}
+	<!-- BCrypt 사용 전 쿼리-->
+	<!--  select id, name, email, phone, adck from member where id = #{id} and pw = #{pw} -->
   	</select>
 	
   </mapper>
