@@ -25,11 +25,13 @@
 	
 	  <!-- 인터셉터 적용 -->
     <interceptors>
-        <interceptor>
+<!--
+         <interceptor>
             <mapping path="/member/login.do"></mapping>
             <beans:bean id="loginIntreceptor" class="com.mall.interceptor.LoginInterceptor"></beans:bean>
         </interceptor>
-        <interceptor>
+ -->
+         <interceptor>
             <mapping path="/admin/**"></mapping>
             <beans:bean id="AdminIntreceptor" class="com.mall.interceptor.AdminInterceptor"></beans:bean>
         </interceptor>

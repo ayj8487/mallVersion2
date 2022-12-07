@@ -44,6 +44,7 @@
                   <a href="/admin/main">관리자 페이지</a>
   	           </c:if>
 			 </span>
+			 <span><a href="/board/write">게시글 작성</a></span>
          </div>         
      </c:if>
      
