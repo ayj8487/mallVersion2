@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.mall.mapper.BoardMapper">
+
+	<insert id="board">
+		insert into board (board_num, board_title, user_id, board_content, board_regi) 
+		values (BNO.nextval, #{board_title}, #{user_id}, #{board_content}, sysdate)
+	</insert>
+
+
+  </mapper>
