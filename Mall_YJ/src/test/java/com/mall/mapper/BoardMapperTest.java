@@ -21,10 +21,10 @@ public class BoardMapperTest {
 		
 		BoardVO boardvo = new BoardVO();
 
-		boardvo.setBoard_title("제목333");
-		boardvo.setUser_id("aa123");
-		boardvo.setBoard_content("내용333");
+		boardvo.setBoard_title("제목444");
+		boardvo.setUser_id("bb333");
+		boardvo.setBoard_content("내용444");
 		
-		mapper.board(boardvo);
+		mapper.boardRegi(boardvo);
 	}
 }
