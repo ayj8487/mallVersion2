@@ -25,6 +25,15 @@
     <c:if test = "${member == null }">
         <div class="login_button"><a href="/member/login">로그인</a></div>
         <span><a href="/member/join">회원가입</a></span>                
+		<div> 
+			<table>
+				<tr>
+				<td>ss</td><td>sad</td>
+				</tr>
+
+
+			</table>
+		</div>
     </c:if>    
  
      <!-- 로그인한 상태 -->
