@@ -21,18 +21,12 @@
 		<a href="/member/join">회원가입</a>
 	</div>
  -->	
+
 	<!-- 로그인 하지 않은 상태 -->
     <c:if test = "${member == null }">
         <div class="login_button"><a href="/member/login">로그인</a></div>
         <span><a href="/member/join">회원가입</a></span>                
 		<div> 
-			<table>
-				<tr>
-				<td>ss</td><td>sad</td>
-				</tr>
-
-
-			</table>
 		</div>
     </c:if>    
  
@@ -56,9 +50,24 @@
 			 <span><a href="/board/write">게시글 작성</a></span>
          </div>         
      </c:if>
+	
+		<table>
+		
+				<tr>
+				<td>${list.board_num}</td><td>ss</td>
+				<tr/>
+
+				<tr>
+				<td>내용</td><td>ssssdsad</td>
+				</tr>
+
+				<tr>
+				<td>작성자</td><td>sadasd</td>
+				</tr>
+</table>
+
      
      <script>
-
      
 /* gnb_area 로그아웃 버튼 작동 */
     $("#logout_button").click(function(){

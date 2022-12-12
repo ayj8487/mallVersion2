@@ -9,5 +9,9 @@
 		values (BNO.nextval, #{board_title}, #{user_id}, #{board_content}, sysdate)
 	</insert>
 
+	<select id="list" resultType="com.mall.model.BoardVO">
+		select board_num, board_regi, board_title , board_content , user_id 
+		from board order by board_num desc
+	</select>
 
   </mapper>
